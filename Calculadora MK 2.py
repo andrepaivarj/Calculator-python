@@ -251,16 +251,6 @@ def matriz():
 
     def mat_transposta():
         matriz1 = []
-        linhas = len(matriz1)
-        colunas = len(matriz1[0])
-        At = [[0 for i in range(linhas)]for j in range (colunas)]
-        for i in range (linhas):
-            for j in range (colunas):
-                At[j][i] = matriz1[i][j]
-        return print ('A matriz transposta de',matriz1,' e: ', At)
-
-    def new_func():
-        matriz1 = []
         linha = int(input('Informe a quantidade de linhas da matriz: '))
         coluna = int(input('Informe a quantidade de colunas da matriz: '))
         for i in range (0,linha):
@@ -268,9 +258,16 @@ def matriz():
             for j in range (0,coluna):
                 aij = float(input('Insira um termo da matriz: '))
                 matriz1[i].append(aij)
-        return matriz1
-    
         
+        matriz1 = []
+        linhas = len(matriz1)
+        colunas = len(matriz1[0])
+        At = [[0 for i in range(linhas)]for j in range (colunas)]
+        for i in range (linhas):
+            for j in range (colunas):
+                At[j][i] = matriz1[i][j]
+        return print ('A matriz transposta de',matriz1,' e: ', At)
+       
     def menu_matriz():
         print('   CALCULADORA DE MATRIZES\n\n')
         print('DIGITE: \n1 - SOMA \n2 - SUBTRACÃO \n3 - MATRIZ TRANSPOSTA \n4 - MULTIPLICACÃO ESCALAR \nV - VOLTAR AO MENU PRINCIPAL')
