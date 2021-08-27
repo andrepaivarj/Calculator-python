@@ -269,8 +269,8 @@ def matriz():
         return print ('A matriz transposta de',matriz1,' e: ', At)
        
     def menu_matriz():
-        print('   CALCULADORA DE MATRIZES\n\n')
-        print('DIGITE: \n1 - SOMA \n2 - SUBTRACÃO \n3 - MATRIZ TRANSPOSTA \n4 - MULTIPLICACÃO ESCALAR \nV - VOLTAR AO MENU PRINCIPAL')
+        print('\n   CALCULADORA DE MATRIZES\n\n')
+        print('DIGITE: \n1 - SOMA \n2 - SUBTRACÃO \n3 - MATRIZ TRANSPOSTA \nV - VOLTAR AO MENU PRINCIPAL')
         opcao_matriz = input('\nQUAL A OPCÃO DESEJADA? ')
         return (opcao_matriz)
 
